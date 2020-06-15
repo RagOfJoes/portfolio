@@ -1,25 +1,29 @@
 {
-  "name": "portfolio-v2",
-  "version": "1.0.0",
-  "description": "Portfolio Website one year later",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "Victor",
-    "RagOfJoes",
-    "React",
-    "NextJS",
-    "Portfolio"
-  ],
-  "author": "Victor Ragojos",
-  "license": "MIT",
-  "dependencies": {
-    "@material-ui/core": "^4.10.2",
-    "next": "^9.4.4",
-    "prop-types": "^15.7.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
-  }
+	"name": "portfolio-v2",
+	"version": "1.0.0",
+	"description": "Portfolio Website one year later",
+	"main": "index.js",
+	"scripts": {
+		"dev": "next",
+		"start": "next start",
+		"build": "next build && next export"
+	},
+	"keywords": [
+		"Victor",
+		"RagOfJoes",
+		"React",
+		"NextJS",
+		"Portfolio"
+	],
+	"author": "Victor Ragojos",
+	"license": "MIT",
+	"dependencies": {
+		"@material-ui/core": "^4.10.2",
+		"@material-ui/icons": "^4.9.1",
+		"moment": "^2.26.0",
+		"next": "^9.4.4",
+		"prop-types": "^15.7.2",
+		"react": "^16.13.1",
+		"react-dom": "^16.13.1"
+	}
 }
