@@ -1,7 +1,7 @@
 import makeStyles from '@material-ui/core/styles/makeStyles';
 
 export default makeStyles(
-	({ shape, palette, transitions, typography, breakpoints }) => ({
+	({ shape, spacing, palette, transitions, typography, breakpoints }) => ({
 		container: {
 			backgroundColor: palette.background.default,
 		},
@@ -33,11 +33,14 @@ export default makeStyles(
 			borderTopLeftRadius: shape.borderRadius * 3,
 			borderBottomLeftRadius: shape.borderRadius * 3,
 		},
+		title: {
+			padding: spacing(2),
+		},
 		list: {
 			height: '100%',
 		},
 		listText: {
-			opacity: .8,
+			opacity: 0.8,
 			textTransform: 'capitalize',
 			color: palette.text.secondary,
 			fontWeight: typography.fontWeightMedium,

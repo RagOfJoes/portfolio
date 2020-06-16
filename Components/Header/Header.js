@@ -18,7 +18,7 @@ export default function HideAppBar(props) {
 			<AppBar elevation={0} position="sticky" color="transparent" className={styles.container}>
 				<Toolbar component="nav" className={styles.wrapper}>
 					<Grid wrap="nowrap" container justify="space-between" alignItems="center">
-						<Grid item container spacing={1} alignItems="center">
+						<Grid item container spacing={2} alignItems="center">
 							<Grid item href="/" component="a">
 								<img
 									alt="Logo"
@@ -27,14 +27,22 @@ export default function HideAppBar(props) {
 									style={{ width: 24, height: 24, borderRadius: 4 }}
 								/>
 							</Grid>
-							<Grid item>
-								<Typography href="/" color="textPrimary" variant="body1" component="a" className={styles.name}>
-									Victor Ragojos
-								</Typography>
-							</Grid>
+							<Hidden smDown implementation="css">
+								<Grid item>
+									<Typography
+										href="/"
+										color="textPrimary"
+										variant="body1"
+										component="a"
+										className={styles.name}
+									>
+										Victor Ragojos
+									</Typography>
+								</Grid>
+							</Hidden>
 						</Grid>
 
-						<Hidden smDown>
+						<Hidden xsDown implementation="css">
 							<Grid item container spacing={4} wrap="nowrap" justify="flex-end" alignItems="center">
 								{routes.map((r) => {
 									const { route, Icon, displayName } = r;

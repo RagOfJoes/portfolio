@@ -1,13 +1,13 @@
 import { useState } from 'react';
-import { routes } from 'lib/constants';
+import { routes, socials } from 'lib/constants';
 import Grid from '@material-ui/core/Grid';
 import List from '@material-ui/core/List';
 import useHeaderStyles from './Header.style';
 import Drawer from '@material-ui/core/Drawer';
 import Hidden from '@material-ui/core/Hidden';
 import MenuIcon from '@material-ui/icons/Menu';
-import Toolbar from '@material-ui/core/Toolbar';
 import ListItem from '@material-ui/core/ListItem';
+import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
@@ -31,6 +31,9 @@ export default (props) => {
 					variant="temporary"
 					container={container}
 					onClose={() => togggleDrawerOpen(false)}
+					BackdropProps={{
+						invisible: true,
+					}}
 					PaperProps={{
 						className: styles.drawer,
 					}}
@@ -38,7 +41,10 @@ export default (props) => {
 						keepMounted: true, // Better open performance on mobile.
 					}}
 				>
-					<Toolbar />
+					<Typography variant="h6" className={styles.title}>
+						Menu
+					</Typography>
+
 					<List className={styles.list}>
 						{routes.map((r) => {
 							const { route, Icon, displayName } = r;
@@ -63,6 +69,38 @@ export default (props) => {
 							);
 						})}
 					</List>
+
+					<Grid
+						container
+						spacing={2}
+						justify="center"
+						style={{ width: '100%', overflow: 'hidden', marginTop: 'auto', padding: '48px 8px' }}
+					>
+						<Grid xs={12} item container spacing={2} justify="center" alignItems="center">
+							{socials.map((social) => {
+								const { Icon, link } = social;
+
+								return (
+									<Grid item key={link}>
+										<IconButton
+											href={link}
+											component="a"
+											color="inherit"
+											target="_blank"
+											rel="noopener noreferrer"
+										>
+											{Icon}
+										</IconButton>
+									</Grid>
+								);
+							})}
+						</Grid>
+						<Grid item>
+							<Typography variant="subtitle2" color="textSecondary">
+								Created by Victor Ragojos
+							</Typography>
+						</Grid>
+					</Grid>
 				</Drawer>
 			</Hidden>
 		</>
