@@ -8,8 +8,8 @@ import makeStyles from '@material-ui/core/styles/makeStyles';
 const useSocialStyles = makeStyles(
 	({}) => ({
 		section: {
-			height: 250,
-			paddingTop: 64,
+			height: 325,
+			paddingTop: 128,
 			paddingBottom: 64,
 		},
 	}),

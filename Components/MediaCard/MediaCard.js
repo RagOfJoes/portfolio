@@ -15,10 +15,12 @@ const Index = ({ image, title, link, subtitle, description, direction = 'left' }
 			<Grid item xs={12} md={8} className={styles.imageContainer}>
 				<CardMedia image={image} alt={title} title={title} className={styles.image} />
 			</Grid>
-			<Grid item xs={12} md={4} container direction="column" className={styles.info}>
+			<Grid item xs={12} md={4} container direction="column" justify="center" className={styles.info}>
 				<Grid item container alignItems="center" justify="space-between">
 					<Grid item>
-						<Typography variant="h5">{title}</Typography>
+						<Typography variant="h5" color="primary" className={styles.title}>
+							{title}
+						</Typography>
 					</Grid>
 
 					{link && (
@@ -31,7 +33,7 @@ const Index = ({ image, title, link, subtitle, description, direction = 'left' }
 								disableFocusRipple
 								rel="noopener noreferrer"
 							>
-								<CallMadeIcon color="primary" fontSize="small" />
+								<CallMadeIcon fontSize="small" />
 							</IconButton>
 						</Grid>
 					)}

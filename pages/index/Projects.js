@@ -28,10 +28,10 @@ export default () => {
 	return (
 		<Section id="projects" container wrap="nowrap" direction="column" className={styles.section}>
 			<Grid item>
-				<Typography variant="h6">Projects</Typography>
+				<Typography variant="h5">Notable Projects</Typography>
 			</Grid>
 
-			<Grid item container spacing={2} className={styles.cards}>
+			<Grid item container spacing={4} className={styles.cards}>
 				{featuredProjects.map((project, i) => {
 					const { name, link, image, stack, description } = project;
 
@@ -53,7 +53,7 @@ export default () => {
 			<Toolbar />
 
 			<Grid item>
-				<Typography variant="h6">Archived</Typography>
+				<Typography variant="h6">Archived Projects</Typography>
 			</Grid>
 
 			<Grid item container spacing={2} className={styles.archived}>

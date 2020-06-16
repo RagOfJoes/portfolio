@@ -7,10 +7,13 @@ import Typography from '@material-ui/core/Typography';
 import makeStyles from '@material-ui/core/styles/makeStyles';
 
 const useExperienceStyles = makeStyles(
-	({ spacing }) => ({
+	({ spacing, palette, typography, breakpoints }) => ({
 		section: {
+			width: '100%',
+			height: '100%',
 			paddingTop: 64,
-			height: '100vh',
+			paddingBottom: 128,
+			position: 'relative',
 		},
 		cards: {
 			marginTop: spacing(2),
@@ -24,7 +27,7 @@ export default () => {
 	return (
 		<Section id="experience" container direction="column" className={styles.section}>
 			<Grid item>
-				<Typography variant="h6">Experience</Typography>
+				<Typography variant="h5">Experience</Typography>
 			</Grid>
 
 			<Grid item container spacing={2} className={styles.cards}>

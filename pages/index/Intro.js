@@ -2,8 +2,10 @@ import Section from 'Components/Section';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import CardMedia from '@material-ui/core/CardMedia';
+import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import makeStyles from '@material-ui/core/styles/makeStyles';
+import ExpandMoreRoundedIcon from '@material-ui/icons/ExpandMoreRounded';
 
 const useIntroStyles = makeStyles(
 	({ palette, breakpoints }) => ({
@@ -15,6 +17,13 @@ const useIntroStyles = makeStyles(
 			[breakpoints.down('xs')]: {
 				display: 'none',
 			},
+		},
+		scroll: {
+			bottom: 15,
+			left: '50%',
+			position: 'absolute',
+			color: palette.text.primary,
+			transform: 'translateX(-50%)',
 		},
 	}),
 	{ name: 'IntroSection' }
@@ -65,6 +74,10 @@ export default () => {
 			<Grid xs={12} sm={6} item container alignItems="center" className={styles.image}>
 				<CardMedia alt="Hero" title="Hero" component="img" image="/images/Hero.svg" />
 			</Grid>
+
+			<IconButton href="#experience" className={styles.scroll}>
+				<ExpandMoreRoundedIcon color="inherit" fontSize="large" />
+			</IconButton>
 		</Section>
 	);
 };
