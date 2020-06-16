@@ -14,7 +14,7 @@ export default class MyDocument extends Document {
 						name="keywords"
 						content="RagOfJoes, Victor Ragojos, Victor, Ragojos, software engineer, react, javascript"
 					/>
-					<meta name="description" content="A boring person that likes to code interesting things." />
+					<meta name="description" content="A boring person who likes to code interesting things." />
 
 					<meta property="og:type" content="website" />
 					<meta property="og:locale" content="en_US" />
@@ -22,10 +22,9 @@ export default class MyDocument extends Document {
 					<meta property="og:url" content="https://ragofjoes.dev" />
 					<meta property="og:title" content="Victor Ragojos | Portfolio" />
 					<meta property="og:site_name" content="Victor Ragojos | Portfolio" />
-					<meta name="og:description" content="A boring person that likes to code interesting things." />
+					<meta name="og:description" content="A boring person who likes to code interesting things." />
 
 					<meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
-					<meta name="description" content="A boring person that likes to code interesting things." />
 					<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
 
 					<link rel="shortcut icon" href="/images/favicon.ico" />

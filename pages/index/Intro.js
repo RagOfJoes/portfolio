@@ -46,7 +46,7 @@ export default () => {
 
 				<Grid item>
 					<Typography variant="h5" color="primary">
-						I'm a boring person that codes interesting things.
+						I'm a boring person who codes interesting things.
 					</Typography>
 				</Grid>
 
