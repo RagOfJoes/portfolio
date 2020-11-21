@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Drawer from "./Drawer";
-import Image from "next/image";
 import { routes } from "lib/constants";
 import { HideOnScroll } from "./helpers";
 import Grid from "@material-ui/core/Grid";
@@ -31,13 +30,11 @@ const Header = (props) => {
           >
             <Grid item container spacing={2} alignItems="center">
               <Grid item href="/" component="a">
-                <Image
+                <img
                   alt="Logo"
-                  width={24}
-                  height={24}
                   title="Logo"
                   src="/images/icon-512.png"
-                  style={{ borderRadius: 4 }}
+                  style={{ width: 24, height: 24, borderRadius: 4 }}
                 />
               </Grid>
               <Hidden smDown implementation="css">
