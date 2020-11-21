@@ -1,7 +1,5 @@
 import HomeLayout from "layouts/Home";
 
-const Index = () => {
-  return <HomeLayout />;
-};
+const Index = () => <HomeLayout />;
 
 export default Index;

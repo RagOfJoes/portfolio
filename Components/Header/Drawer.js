@@ -1,18 +1,18 @@
 import { useState } from "react";
-import { routes, socials } from "lib/constants";
 import Grid from "@material-ui/core/Grid";
 import List from "@material-ui/core/List";
 import useHeaderStyles from "./Header.style";
 import Drawer from "@material-ui/core/Drawer";
 import Hidden from "@material-ui/core/Hidden";
 import MenuIcon from "@material-ui/icons/Menu";
+import { routes, socials } from "lib/constants";
 import ListItem from "@material-ui/core/ListItem";
 import Typography from "@material-ui/core/Typography";
 import IconButton from "@material-ui/core/IconButton";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 
-const SideDrawer = (props) => {
+const SideDrawer = () => {
   const styles = useHeaderStyles();
   const [drawerOpen, togggleDrawerOpen] = useState(false);
   const container =
@@ -79,7 +79,7 @@ const SideDrawer = (props) => {
           <Grid
             container
             spacing={2}
-            justify="center"
+            justifyContent="center"
             style={{
               width: "100%",
               overflow: "hidden",
@@ -88,12 +88,12 @@ const SideDrawer = (props) => {
             }}
           >
             <Grid
-              xs={12}
               item
+              xs={12}
               container
               spacing={2}
-              justify="center"
               alignItems="center"
+              justifyContent="center"
             >
               {socials.map((social) => {
                 const { Icon, link, name } = social;

@@ -11,7 +11,7 @@ const Index = ({ image, title, link, subtitle, description }) => {
   const styles = useMediaCardStyles();
 
   return (
-    <Box width="100%" className={styles.container}>
+    <Box sx={{ width: "100%" }} className={styles.container}>
       <Grid item xs={12} className={styles.imageContainer}>
         <CardMedia
           image={image}
@@ -25,7 +25,7 @@ const Index = ({ image, title, link, subtitle, description }) => {
           item
           container
           alignItems="center"
-          justify="space-between"
+          justifyContent="space-between"
           className={styles.titleContainer}
         >
           <Grid item className="titleGrid">

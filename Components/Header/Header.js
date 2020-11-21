@@ -25,8 +25,8 @@ const Header = (props) => {
           <Grid
             container
             wrap="nowrap"
-            justify="space-between"
             alignItems="center"
+            justifyContent="space-between"
           >
             <Grid item container spacing={2} alignItems="center">
               <Grid item href="/" component="a">
@@ -37,7 +37,7 @@ const Header = (props) => {
                   style={{ width: 24, height: 24, borderRadius: 4 }}
                 />
               </Grid>
-              <Hidden smDown implementation="css">
+              <Hidden mdDown implementation="css">
                 <Grid item>
                   <Typography
                     href="/"
@@ -52,14 +52,14 @@ const Header = (props) => {
               </Hidden>
             </Grid>
 
-            <Hidden xsDown implementation="css">
+            <Hidden smDown implementation="css">
               <Grid
                 item
                 container
                 spacing={4}
                 wrap="nowrap"
-                justify="flex-end"
                 alignItems="center"
+                justifyContent="flex-end"
               >
                 {routes.map((r) => {
                   const { route, Icon, displayName } = r;

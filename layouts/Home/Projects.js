@@ -4,7 +4,7 @@ import MediaCard from "Components/MediaCard";
 import Toolbar from "@material-ui/core/Toolbar";
 import OutlinedCard from "Components/OutlinedCard";
 import Typography from "@material-ui/core/Typography";
-import makeStyles from "@material-ui/core/styles/makeStyles";
+import { makeStyles } from "@material-ui/core/styles";
 import { featuredProjects, archivedProjects } from "lib/constants";
 
 const useProjectStyles = makeStyles(

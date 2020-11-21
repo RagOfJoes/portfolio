@@ -4,7 +4,7 @@ import Grid from "@material-ui/core/Grid";
 import { experiences } from "lib/constants";
 import OutlinedCards from "Components/OutlinedCard";
 import Typography from "@material-ui/core/Typography";
-import makeStyles from "@material-ui/core/styles/makeStyles";
+import { makeStyles } from "@material-ui/core/styles";
 
 const useExperienceStyles = makeStyles(
   ({ spacing }) => ({

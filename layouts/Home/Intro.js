@@ -5,7 +5,7 @@ import { siteDescription } from "lib/constants";
 import CardMedia from "@material-ui/core/CardMedia";
 import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
-import makeStyles from "@material-ui/core/styles/makeStyles";
+import { makeStyles } from "@material-ui/core/styles";
 import ExpandMoreRoundedIcon from "@material-ui/icons/ExpandMoreRounded";
 
 const useIntroStyles = makeStyles(
@@ -15,7 +15,7 @@ const useIntroStyles = makeStyles(
     },
     image: {
       opacity: 0.7,
-      [breakpoints.down("xs")]: {
+      [breakpoints.down("sm")]: {
         display: "none",
       },
     },
@@ -40,13 +40,13 @@ const Intro = () => {
   return (
     <Section id="intro" container spacing={2} fullHeight={false}>
       <Grid
-        xs={12}
-        sm={6}
         item
+        sm={6}
+        xs={12}
         container
         spacing={1}
         direction="column"
-        justify="center"
+        justifyContent="center"
       >
         <Grid item>
           <Typography variant="subtitle1" className={styles.intro}>
@@ -92,9 +92,9 @@ const Intro = () => {
       </Grid>
 
       <Grid
-        xs={12}
-        sm={6}
         item
+        sm={6}
+        xs={12}
         container
         alignItems="center"
         className={styles.image}

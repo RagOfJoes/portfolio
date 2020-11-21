@@ -16,8 +16,8 @@ const OutlineCards = ({
 }) => {
   const styles = useOutlineCardsStyles({ color });
   return (
-    <Box width="100%" className={styles.container}>
-      <Grid container justify="space-between" alignItems="center">
+    <Box sx={{ width: "100%" }} className={styles.container}>
+      <Grid container justifyContent="space-between" alignItems="center">
         <Grid item>
           <Typography variant="h6">{title}</Typography>
         </Grid>

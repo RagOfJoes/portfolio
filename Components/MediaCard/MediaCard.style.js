@@ -1,16 +1,7 @@
-import { fade, lighten } from "@material-ui/core";
-import makeStyles from "@material-ui/core/styles/makeStyles";
+import { alpha, makeStyles } from "@material-ui/core/styles";
 
 export default makeStyles(
-  ({
-    shape,
-    spacing,
-    shadows,
-    palette,
-    typography,
-    transitions,
-    breakpoints,
-  }) => ({
+  ({ shape, spacing, shadows, palette, typography, transitions }) => ({
     container: {
       height: "100%",
       display: "flex",
@@ -20,11 +11,7 @@ export default makeStyles(
       transition: transitions.create("all"),
 
       "&:hover": {
-        transform: "scale(0.99)"
-      },
-
-      [breakpoints.down("xs")]: {
-        padding: spacing(1),
+        transform: "scale(0.99)",
       },
     },
     imageContainer: {
@@ -56,7 +43,7 @@ export default makeStyles(
         borderBottomRightRadius: 0,
         borderTopLeftRadius: shape.borderRadius,
         borderTopRightRadius: shape.borderRadius,
-        backgroundColor: fade(palette.primary.main, 0.18),
+        backgroundColor: alpha(palette.primary.main, 0.18),
         transition: transitions.create("all", { duration: 180 }),
       },
 

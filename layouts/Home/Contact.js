@@ -3,7 +3,7 @@ import Section from "Components/Section";
 import Grid from "@material-ui/core/Grid";
 import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
-import makeStyles from "@material-ui/core/styles/makeStyles";
+import { makeStyles } from "@material-ui/core/styles";
 
 const useSocialStyles = makeStyles(
   ({}) => ({
@@ -27,8 +27,8 @@ const Contact = () => {
     >
       <Grid
         container
-        justify="center"
         alignItems="flex-end"
+        justifyContent="center"
         style={{ height: "100%" }}
       >
         <Grid
@@ -36,8 +36,8 @@ const Contact = () => {
           item
           container
           spacing={2}
-          justify="center"
           alignItems="flex-end"
+          justifyContent="center"
         >
           {socials.map((social) => {
             const { Icon, link, name } = social;
