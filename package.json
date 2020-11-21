@@ -18,12 +18,12 @@
 	"author": "Victor Ragojos",
 	"license": "MIT",
 	"dependencies": {
-		"@material-ui/core": "^4.10.2",
+		"@material-ui/core": "^4.11.0",
 		"@material-ui/icons": "^4.9.1",
 		"moment": "^2.26.0",
-		"next": "^9.4.4",
+		"next": "^10.0.2",
 		"prop-types": "^15.7.2",
-		"react": "^16.13.1",
-		"react-dom": "^16.13.1"
+		"react": "^16.14.0",
+		"react-dom": "^16.14.0"
 	}
 }
