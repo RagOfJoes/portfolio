@@ -10,6 +10,7 @@ import {
 } from '@chakra-ui/react';
 import Link from 'next/link';
 
+import Logo from '@/components/Logo';
 import { ROUTES } from '@/lib/constants';
 
 const Header = () => {
@@ -36,43 +37,24 @@ const Header = () => {
       >
         <Flex w="full" h="full" align="center" justify="space-between">
           <Link passHref href="/">
-            <a>
-              <Flex align="center">
-                <Box
-                  w="40px"
-                  h="40px"
-                  display="flex"
-                  borderRadius="lg"
-                  border="2px solid"
-                  alignItems="center"
-                  borderColor="primary"
-                  justifyContent="center"
+            <Flex as="a" align="center">
+              <Logo w="40px" h="40px" />
+              <Flex ml="4" direction="column">
+                <Heading
+                  size="sm"
+                  cursor="pointer"
+                  fontWeight="bold"
+                  lineHeight="normal"
+                  transition="0.12s linear color"
+                  _hover={{ color: 'primary' }}
                 >
-                  <Text fontSize="xl" color="primary" fontWeight="medium">
-                    \=/
-                  </Text>
-                </Box>
-                <Flex ml="4" direction="column">
-                  <Heading
-                    size="sm"
-                    cursor="pointer"
-                    fontWeight="bold"
-                    lineHeight="normal"
-                    transition="0.12s linear color"
-                    _hover={{ color: 'primary' }}
-                  >
-                    Victor Ragojos
-                  </Heading>
-                  <Text
-                    fontSize="sm"
-                    lineHeight="normal"
-                    color="text.secondary"
-                  >
-                    Portfolio
-                  </Text>
-                </Flex>
+                  Victor Ragojos
+                </Heading>
+                <Text fontSize="sm" lineHeight="normal" color="text.secondary">
+                  Portfolio
+                </Text>
               </Flex>
-            </a>
+            </Flex>
           </Link>
 
           <Grid
