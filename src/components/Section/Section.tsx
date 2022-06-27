@@ -11,10 +11,11 @@ const Section = (props: SectionProps) => {
 
   return (
     // Padding is from Header height + 60px
-    <Box w="100%" h="100vh" pt="139px" as="section" {...other} id={id}>
+    <Box w="100%" minH="100vh" pt="139px" as="section" {...other} id={id}>
       <Flex direction="column" align="center">
         <Heading
           fontSize="sm"
+          lineHeight="normal"
           fontWeight="semibold"
           letterSpacing="wider"
           color="text.secondary"
@@ -22,7 +23,7 @@ const Section = (props: SectionProps) => {
         >
           {title}
         </Heading>
-        <Heading mt="4" size="xl" fontWeight="semibold">
+        <Heading mt="2" size="xl" lineHeight="normal" fontWeight="semibold">
           {caption}
         </Heading>
       </Flex>
