@@ -4,42 +4,39 @@ import { IoAlbums, IoBriefcase, IoMail } from 'react-icons/io5';
 export const EXPERIENCES = [
   {
     company: 'Offset Partners',
-    job: 'Product Engineer',
-    link: 'https://www.offsetpartners.com/',
-    duration: { from: dayjs('12/08/2020', 'MM/DD/YYYY'), to: dayjs() },
     description: [
       'Led development team in creating a low code solution allowing our clients to easily integrate our Cart and CMS service to their existing site.',
       'Refactored legacy PHP MVC framework to improve integration with React which decreased the number of duplicate and brittle code by up to 60%.',
       'Implemented Docker into product to decrease the amount of variability between environments.',
       'Helped introduce a proper Version Control workflow with GitHub, which, dramatically increased efficiency of our growing development team.',
     ],
+    end: dayjs(),
+    job: 'Product Engineer',
+    link: 'https://www.offsetpartners.com/',
+    start: dayjs('12/08/2020', 'MM/DD/YYYY'),
   },
   {
     company: 'Offset Partners',
-    job: 'Junior Software Developer',
-    link: 'https://www.offsetpartners.com/',
-    duration: {
-      from: dayjs('07/07/2019', 'MM/DD/YYYY'),
-      to: dayjs('12/08/2020', 'MM/DD/YYYY'),
-    },
     description: [
       'Managed e-commerce platform by squashing bugs and addressing client requests.',
       'Prototyped a number internal tools such as a Client issue tracker, GraphQL wrapper for Cart service, and, Chart intensive dashboard application.',
       'Worked with designers to build unique and beautiful websites that helped clients solidify their identity.',
     ],
+    end: dayjs('12/08/2020', 'MM/DD/YYYY'),
+    job: 'Junior Software Developer',
+    link: 'https://www.offsetpartners.com/',
+    start: dayjs('07/07/2019', 'MM/DD/YYYY'),
   },
   {
     company: 'Napa Valley College',
-    job: 'Computer Science Tutor',
-    duration: {
-      from: dayjs('08/01/2018', 'MM/DD/YYYY'),
-      to: dayjs('05/21/2019', 'MM/DD/YYYY'),
-    },
     description: [
       'Assisted classmates with various studying techniques for exams, projects, and/or assignments.',
       'Presented different ways to visualize, understand, and enjoy complex programming topics.',
       'Collaborated with professors to address teaching and assignment issues.',
     ],
+    end: dayjs('05/21/2019', 'MM/DD/YYYY'),
+    job: 'Computer Science Tutor',
+    start: dayjs('08/01/2018', 'MM/DD/YYYY'),
   },
 ];
 
