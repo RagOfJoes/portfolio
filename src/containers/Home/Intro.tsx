@@ -60,8 +60,10 @@ const Intro = () => {
                 w="auto"
                 target="_blank"
                 color="primary"
+                fontWeight="bold"
                 borderRadius="lg"
                 variant="outline"
+                borderWidth="2px"
                 borderColor="primary"
                 _hover={{ bg: 'transparent' }}
                 _active={{ bg: 'transparent' }}
@@ -88,13 +90,16 @@ const Intro = () => {
                 w="100%"
                 key={text}
                 maxW="140px"
+                justify="end"
                 direction="column"
+                h={{ base: '100%', md: 'auto' }}
+                textAlign={{ base: 'center', md: 'end' }}
                 mt={index > 0 ? { base: '0', md: '6' } : {}}
               >
-                <Heading size="lg">{title}</Heading>
                 <Text fontSize="md" fontWeight="medium" color="text.secondary">
                   {text}
                 </Text>
+                <Heading size="lg">{title}</Heading>
               </Flex>
             );
           })}
@@ -107,8 +112,8 @@ const Intro = () => {
           isRound
           size="lg"
           left="50%"
-          bottom="6"
-          variant="ghost"
+          bottom="10"
+          variant="link"
           cursor="pointer"
           position="absolute"
           transform="translateX(-50%)"

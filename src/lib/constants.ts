@@ -42,12 +42,12 @@ export const EXPERIENCES = [
 
 export const INTRO_STATS = [
   {
-    title: '2+',
+    title: dayjs().diff(dayjs('07/07/2019', 'MM/DD/YYYY'), 'years'),
     text: 'Years of Experience',
   },
   {
-    title: '5',
-    text: "Production apps that I've lead",
+    title: 5,
+    text: "Production apps I've lead",
   },
   {
     title:
