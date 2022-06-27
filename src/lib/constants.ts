@@ -1,5 +1,30 @@
 import dayjs from 'dayjs';
-import { IoAlbums, IoBriefcase, IoMail } from 'react-icons/io5';
+import {
+  IoAlbums,
+  IoBriefcase,
+  IoDocument,
+  IoLogoGithub,
+  IoLogoLinkedin,
+  IoMail,
+} from 'react-icons/io5';
+
+export const CONTACTS = [
+  {
+    Icon: IoLogoGithub,
+    label: 'View my GitHub profile',
+    link: 'https://github.com/RagOfJoes',
+  },
+  {
+    Icon: IoLogoLinkedin,
+    label: 'View my LinkedIn profile',
+    link: 'https://www.linkedin.com/in/ragofjoes/',
+  },
+  {
+    Icon: IoDocument,
+    label: 'View my Resume',
+    link: '/Resume.pdf',
+  },
+];
 
 export const EXPERIENCES = [
   {

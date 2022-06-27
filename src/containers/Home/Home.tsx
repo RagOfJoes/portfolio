@@ -2,6 +2,7 @@ import { Container } from '@chakra-ui/react';
 
 import Header from '@/components/Header';
 
+import Contact from './Contact';
 import Experience from './Experience';
 import Intro from './Intro';
 import Projects from './Projects';
@@ -14,6 +15,7 @@ const Home = () => {
         <Intro />
         <Experience />
         <Projects />
+        <Contact />
       </Container>
     </>
   );
