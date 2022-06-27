@@ -58,6 +58,64 @@ export const INTRO_STATS = [
   },
 ];
 
+export const PROJECTS = [
+  {
+    image: '/images/Puzzlely-Preview.png',
+    name: 'Puzzlely',
+    summary: `A puzzle game that's inspired by the BBC's "Only Connect" game show. Users create
+    a puzzle with 16 words where a group of 4 words have some connection between them.
+      Players then attempt to link all the groups together and guess the connection
+    between them.`,
+    tags: [
+      'Typescript',
+      'React',
+      'Next',
+      'Go',
+      'OAuth2',
+      'MySQL',
+      'Docker',
+      'Terraform',
+      'DigitalOcean',
+    ],
+    url: 'https://www.puzzlely.io/',
+  },
+  {
+    image: '/images/OctreePalette-Preview.png',
+    name: 'OctreePalette',
+    summary: `An iOS library that extracts the ColorTheme and Palette from an Image. It uses the
+    Octree Color Quantization Algorithm to build the image's distinct color palette.`,
+    tags: ['Mobile', 'iOS', 'Swift 5.0'],
+    url: 'https://github.com/RagOfJoes/OctreePalette',
+  },
+  {
+    image: '/images/Spoonfed-Preview.png',
+    name: 'Spoonfed',
+    summary: `A web app that allows users to create, import, or, share their favorite recipes.
+      Users can also create "Creations" that show off their attempts at following a
+    recipe.`,
+    tags: [
+      'React',
+      'Next',
+      'NodeJS',
+      'GraphQL',
+      'OAuth2',
+      'OIDC',
+      'Redis',
+      'MongoDB',
+      'Azure',
+    ],
+    url: 'https://spoonfed.dev/',
+  },
+  {
+    image: '/images/UserAuth-Preview.png',
+    name: 'Identity Provider',
+    summary: `A simple identity provider that is built on top of the OIDC protocol for
+      authentication. Users are also able to manage their profile and active sessions.`,
+    tags: ['NodeJS', 'OAuth2', 'OIDC', 'MongoDB', 'Redis'],
+    url: 'https://spoonfed.dev/api/login',
+  },
+];
+
 export const ROUTES = [
   {
     href: '#experience',
