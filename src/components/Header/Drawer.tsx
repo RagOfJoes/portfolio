@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import {
   Box,
   Button,
+  ButtonGroup,
   Flex,
   Heading,
   Icon,
@@ -12,6 +13,7 @@ import {
   Modal,
   ModalBody,
   ModalContent,
+  ModalFooter,
   Text,
   useBreakpointValue,
   useColorModeValue,
@@ -24,7 +26,7 @@ import { useRouter } from 'next/router';
 import { IoClose, IoMenu } from 'react-icons/io5';
 
 import Logo from '@/components/Logo';
-import { ROUTES } from '@/lib/constants';
+import { CONTACTS, ROUTES } from '@/lib/constants';
 
 const bodyVariants: Variants = {
   enter: {
@@ -232,6 +234,37 @@ const Drawer = () => {
               })}
             </List>
           </ModalBody>
+          <ModalFooter
+            display="flex"
+            align="center"
+            justify="center"
+            flexDirection="column"
+          >
+            <ButtonGroup size="lg" variant="link">
+              {CONTACTS.map((contact) => {
+                const { Icon: ContactIcon, label, link } = contact;
+
+                return (
+                  <Link passHref key={link} href={link}>
+                    <IconButton
+                      as="a"
+                      aria-label={label}
+                      icon={<Icon as={ContactIcon} />}
+                    />
+                  </Link>
+                );
+              })}
+            </ButtonGroup>
+
+            <Text
+              mt="8"
+              fontSize="sm"
+              fontWeight="semibold"
+              color="text.secondary"
+            >
+              Created by Victor Ragojos
+            </Text>
+          </ModalFooter>
         </ModalContent>
       </Modal>
     </>
