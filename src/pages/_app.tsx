@@ -28,6 +28,33 @@ const App = ({ Component, pageProps }: AppProps) => {
             rel: 'manifest',
             href: '/site.webmanifest',
           },
+          {
+            rel: 'icon',
+            href: '/images/favicon.ico',
+          },
+          {
+            rel: 'icon',
+            sizes: '16x16',
+            type: 'image/png',
+            href: '/images/favicon-16x16.png',
+          },
+          {
+            rel: 'icon',
+            sizes: '32x32',
+            type: 'image/png',
+            href: '/images/favicon-32x32.png',
+          },
+          {
+            rel: 'icon',
+            type: 'image/png',
+            sizes: '16x16',
+            href: '/images/favicon-16x16.png',
+          },
+          {
+            sizes: '180x180',
+            rel: 'apple-touch-icon',
+            href: '/images/apple-touch-icon.png',
+          },
         ]}
         additionalMetaTags={[
           {
