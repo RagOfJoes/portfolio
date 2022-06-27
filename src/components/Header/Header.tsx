@@ -13,6 +13,8 @@ import Link from 'next/link';
 import Logo from '@/components/Logo';
 import { ROUTES } from '@/lib/constants';
 
+import Drawer from './Drawer';
+
 const Header = () => {
   return (
     <Box
@@ -92,6 +94,8 @@ const Header = () => {
               );
             })}
           </Grid>
+
+          <Drawer />
         </Flex>
       </Box>
     </Box>
