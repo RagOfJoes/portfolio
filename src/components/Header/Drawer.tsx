@@ -19,8 +19,7 @@ import {
   useColorModeValue,
   useDisclosure,
 } from '@chakra-ui/react';
-import { motion } from 'framer-motion';
-import { Variants } from 'framer-motion/types/types';
+import { motion, Variants } from 'framer-motion';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { IoClose, IoMenu } from 'react-icons/io5';
