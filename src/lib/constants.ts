@@ -30,10 +30,10 @@ export const EXPERIENCES = [
   {
     company: 'Offset Partners',
     description: [
-      'Led development team in creating a low code solution allowing our clients to easily integrate our Cart and CMS service to their existing site.',
-      'Refactored legacy PHP MVC framework to improve integration with React which decreased the number of duplicate and brittle code by up to 60%.',
-      'Implemented Docker into product to decrease the amount of variability between environments.',
-      'Helped introduce a proper Version Control workflow with GitHub, which, dramatically increased efficiency of our growing development team.',
+      'Led development team in creating a low code solution allowing our clients to easily integrate our Cart and CMS service into their existing site',
+      'Refactored legacy PHP MVC framework to improve integration with React which decreased the number of duplicate and brittle code by up to 60%',
+      'Implemented Docker into our code to decrease the amount of variability between environments and simplify local development setup',
+      'Introduced a proper Version Control workflow with GitHub which cut down production bugs by 80%',
     ],
     end: dayjs(),
     job: 'Product Engineer',
@@ -43,9 +43,9 @@ export const EXPERIENCES = [
   {
     company: 'Offset Partners',
     description: [
-      'Managed e-commerce platform by squashing bugs and addressing client requests.',
-      'Prototyped a number internal tools such as a Client issue tracker, GraphQL wrapper for Cart service, and, Chart intensive dashboard application.',
-      'Worked with designers to build unique and beautiful websites that helped clients solidify their identity.',
+      'Managed e-commerce platform by squashing bugs and addressing client requests',
+      'Prototyped several internal tools such as a centralized Identity Provider, GraphQL wrapper for our Cart service, and a real-time client issue tracker',
+      'Worked closely with designers to build unique features for Client websites',
     ],
     end: dayjs('12/08/2020', 'MM/DD/YYYY'),
     job: 'Junior Software Developer',
@@ -55,9 +55,9 @@ export const EXPERIENCES = [
   {
     company: 'Napa Valley College',
     description: [
-      'Assisted classmates with various studying techniques for exams, projects, and/or assignments.',
-      'Presented different ways to visualize, understand, and enjoy complex programming topics.',
-      'Collaborated with professors to address teaching and assignment issues.',
+      'Assisted classmates with various studying techniques for exams, projects, and/or, assignments',
+      'Presented different ways to visualize, understand, and enjoy complex programming topics',
+      'Collaborated with professors to address teaching and assignment issues',
     ],
     end: dayjs('05/21/2019', 'MM/DD/YYYY'),
     job: 'Computer Science Tutor',
@@ -87,10 +87,8 @@ export const PROJECTS = [
   {
     image: '/images/Puzzlely-Preview.png',
     name: 'Puzzlely',
-    summary: `A puzzle game that's inspired by the BBC's "Only Connect" game show. Users create
-    a puzzle with 16 words where a group of 4 words have some connection between them.
-      Players then attempt to link all the groups together and guess the connection
-    between them.`,
+    summary:
+      'A puzzle game that was inspired by the BBC’s “Only Connect” game show. Users create a puzzle with 16 words where each group of 4 words have some connection between them. Players attempt to link each group together and guess each connection.',
     tags: [
       'Typescript',
       'React',
@@ -107,17 +105,16 @@ export const PROJECTS = [
   {
     image: '/images/OctreePalette-Preview.png',
     name: 'OctreePalette',
-    summary: `An iOS library that extracts the ColorTheme and Palette from an Image. It uses the
-    Octree Color Quantization Algorithm to build the image's distinct color palette.`,
+    summary:
+      'An iOS library that extracts the ColorTheme from an image. It uses the Octree Color Quantization Algorithm to build the image’s distinct color palette.',
     tags: ['Mobile', 'iOS', 'Swift 5.0'],
     url: 'https://github.com/RagOfJoes/OctreePalette',
   },
   {
     image: '/images/Spoonfed-Preview.png',
     name: 'Spoonfed',
-    summary: `A web app that allows users to create, import, or, share their favorite recipes.
-      Users can also create "Creations" that show off their attempts at following a
-    recipe.`,
+    summary:
+      'A web app that allows users to create, import, and share their favorite recipes. Users can also create “Creations” that show off their attempts at following other user generated recipes.',
     tags: [
       'React',
       'Next',
@@ -134,8 +131,8 @@ export const PROJECTS = [
   {
     image: '/images/UserAuth-Preview.png',
     name: 'Identity Provider',
-    summary: `A simple identity provider that is built on top of the OIDC protocol for
-      authentication. Users are also able to manage their profile and active sessions.`,
+    summary:
+      'A simple identity provider that is build on top of the OIDC protocol for authentication. Users can manage their profile and active sessions.',
     tags: ['NodeJS', 'OAuth2', 'OIDC', 'MongoDB', 'Redis'],
     url: 'https://spoonfed.dev/api/login',
   },
