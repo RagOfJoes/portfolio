@@ -101,7 +101,7 @@ const App = ({ Component, pageProps }: AppProps) => {
               width: 1200,
               height: 630,
               type: 'image/png',
-              url: `${BASE_URL}/ogImage.png`,
+              url: `${BASE_URL}/images/ogImage.png`,
             },
           ],
         }}
