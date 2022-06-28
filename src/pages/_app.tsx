@@ -3,7 +3,7 @@ import '@fontsource/raleway/variable.css';
 
 import React from 'react';
 
-import { ChakraProvider, DarkMode } from '@chakra-ui/react';
+import { ChakraProvider, StorageManager } from '@chakra-ui/react';
 import dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime';
 import weekOfYear from 'dayjs/plugin/weekOfYear';
@@ -15,6 +15,15 @@ import theme from '@/lib/theme';
 // Setup DayJS plugins
 dayjs.extend(weekOfYear);
 dayjs.extend(relativeTime);
+
+const cookieManager = (): StorageManager => {
+  return {
+    ssr: true,
+    type: 'cookie',
+    get: () => 'dark',
+    set: () => 'dark',
+  };
+};
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (
@@ -99,10 +108,8 @@ const App = ({ Component, pageProps }: AppProps) => {
         }}
       />
 
-      <ChakraProvider resetCSS theme={theme}>
-        <DarkMode>
-          <Component {...pageProps} />
-        </DarkMode>
+      <ChakraProvider resetCSS theme={theme} colorModeManager={cookieManager()}>
+        <Component {...pageProps} />
       </ChakraProvider>
     </>
   );
