@@ -92,7 +92,7 @@ const Drawer = () => {
         aria-label="Open Menu"
         onClick={() => onOpen()}
         icon={<Icon as={IoMenu} />}
-        display={isVisible ? 'inline-flex' : 'none'}
+        display={{ base: isVisible ? 'inline-flex' : 'none', md: 'none' }}
       />
 
       <Modal
