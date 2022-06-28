@@ -1,8 +1,7 @@
 {
-  "name": "portfolio-v2",
+  "name": "portfolio",
   "version": "2.0.0",
   "description": "Portfolio site",
-  "main": "index.js",
   "scripts": {
     "build": "run-s clean build-next export",
     "build-next": "next build",
