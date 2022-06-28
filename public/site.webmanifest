@@ -4,7 +4,7 @@
   "start_url": "https://www.ragofjoes.dev/",
   "background_color": "#35353D",
   "display": "standalone",
-  "theme_color": "#E9B97D",
+  "theme_color": "#35353D",
   "icons": [
     {
       "src": "/light/apple-touch-icon.png",
