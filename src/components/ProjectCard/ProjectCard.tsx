@@ -45,7 +45,13 @@ const ProjectCard = (props: ProjectCardProps) => {
         transition="all 400ms cubic-bezier(0.4, 0, 0.2, 1) 0ms"
         _hover={{ opacity: 1 }}
         fallback={
-          <Skeleton maxH="320px" minH="320px" borderRadius="lg">
+          <Skeleton
+            maxH="320px"
+            minH="320px"
+            borderRadius="lg"
+            endColor="#35353D"
+            startColor="#26262e"
+          >
             <Box w="100%" h="100%" />
           </Skeleton>
         }
