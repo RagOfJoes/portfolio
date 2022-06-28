@@ -6,7 +6,6 @@ import React from 'react';
 import { ChakraProvider, StorageManager } from '@chakra-ui/react';
 import dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime';
-import weekOfYear from 'dayjs/plugin/weekOfYear';
 import { DefaultSeo } from 'next-seo';
 import { AppProps } from 'next/app';
 
@@ -14,7 +13,6 @@ import { BASE_URL, DESCRIPTION } from '@/lib/constants';
 import theme from '@/lib/theme';
 
 // Setup DayJS plugins
-dayjs.extend(weekOfYear);
 dayjs.extend(relativeTime);
 
 const cookieManager = (): StorageManager => {

@@ -1,4 +1,5 @@
 import dayjs from 'dayjs';
+import weekOfYear from 'dayjs/plugin/weekOfYear';
 import {
   IoAlbums,
   IoBriefcase,
@@ -7,6 +8,10 @@ import {
   IoLogoLinkedin,
   IoMail,
 } from 'react-icons/io5';
+
+dayjs.extend(weekOfYear);
+
+export const BASE_URL = 'https://www.ragofjoes.dev';
 
 export const CONTACTS = [
   {
@@ -158,5 +163,3 @@ export const ROUTES = [
     Icon: IoMail,
   },
 ];
-
-export const BASE_URL = 'https://www.ragofjoes.dev';
