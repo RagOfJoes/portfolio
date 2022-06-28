@@ -1,0 +1,25 @@
+{
+  "short_name": "Portfolio",
+  "name": "Portfolio - Victor Ragojos",
+  "start_url": "https://www.ragofjoes.dev/",
+  "background_color": "#35353D",
+  "display": "standalone",
+  "theme_color": "#E9B97D",
+  "icons": [
+    {
+      "src": "/light/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/light/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/light/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
