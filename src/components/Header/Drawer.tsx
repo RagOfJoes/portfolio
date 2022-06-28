@@ -235,9 +235,9 @@ const Drawer = () => {
           </ModalBody>
           <ModalFooter
             display="flex"
-            align="center"
-            justify="center"
+            alignItems="center"
             flexDirection="column"
+            justifyContent="center"
           >
             <ButtonGroup size="lg" variant="link">
               {CONTACTS.map((contact) => {
