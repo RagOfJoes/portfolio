@@ -10,6 +10,7 @@ import weekOfYear from 'dayjs/plugin/weekOfYear';
 import { DefaultSeo } from 'next-seo';
 import { AppProps } from 'next/app';
 
+import { BASE_URL, DESCRIPTION } from '@/lib/constants';
 import theme from '@/lib/theme';
 
 // Setup DayJS plugins
@@ -29,9 +30,9 @@ const App = ({ Component, pageProps }: AppProps) => {
   return (
     <>
       <DefaultSeo
+        canonical={BASE_URL}
+        description={DESCRIPTION}
         defaultTitle="Portfolio - Victor Ragojos"
-        canonical={process.env.NEXT_PUBLIC_HOST_URL}
-        description=""
         additionalLinkTags={[
           {
             rel: 'manifest',
@@ -92,17 +93,17 @@ const App = ({ Component, pageProps }: AppProps) => {
           },
         ]}
         openGraph={{
+          url: BASE_URL,
           type: 'website',
           locale: 'en_US',
+          description: DESCRIPTION,
           title: 'Portfolio - Victor Ragojos',
-          description: '',
-          url: process.env.NEXT_PUBLIC_HOST_URL,
           images: [
             {
               width: 1200,
               height: 630,
               type: 'image/png',
-              url: `${process.env.NEXT_PUBLIC_HOST_URL}/ogImage.png`,
+              url: `${BASE_URL}/ogImage.png`,
             },
           ],
         }}

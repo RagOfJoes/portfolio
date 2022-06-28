@@ -26,6 +26,9 @@ export const CONTACTS = [
   },
 ];
 
+export const DESCRIPTION =
+  "I'm a software engineer that specializes in building fun and useful applications. I'm currently focusing on building and maintaining products at Offset Partners.";
+
 export const EXPERIENCES = [
   {
     company: 'Offset Partners',
@@ -155,3 +158,5 @@ export const ROUTES = [
     Icon: IoMail,
   },
 ];
+
+export const BASE_URL = 'https://www.ragofjoes.dev';
