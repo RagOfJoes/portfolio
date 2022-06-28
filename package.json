@@ -4,7 +4,8 @@
   "description": "Portfolio site",
   "main": "index.js",
   "scripts": {
-    "build": "run-s clean build export",
+    "build": "run-s clean build-next export",
+    "build-next": "next build",
     "build-types": "tsc --noEmit --pretty",
     "clean": "rimraf .next out",
     "dev": "next dev",
