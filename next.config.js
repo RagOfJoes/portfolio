@@ -1,10 +1,10 @@
 // Before defining your Security Headers
 // add Content Security Policy directives using a template string.
 const ContentSecurityPolicy = `
-  default-src https://ragofjoes.dev;
-  script-src 'self';
+  default-src 'self' www.ragofjoes.dev;
+  script-src ragofjoes.dev;
   child-src ragofjoes.dev;
-  style-src 'self' ragofjoes.dev;
+  style-src 'self' 'unsafe-inline';
   font-src 'self';  
 `;
 
