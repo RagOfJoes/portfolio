@@ -7,9 +7,7 @@ class Analytics {
     }
 
     splitbee.init({
-      apiUrl: process.env.NODE_ENV === 'development' ? undefined : '/_hive',
       disableCookie: true,
-      scriptUrl: process.env.NODE_ENV === 'development' ? undefined : '/bee.js',
       token: process.env.NODE_ENV === 'development' ? splitbeeToken : undefined,
     });
   }
