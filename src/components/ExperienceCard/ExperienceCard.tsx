@@ -21,13 +21,22 @@ export type ExperienceCardProps = {
   end: Dayjs;
   job: string;
   link?: Url;
+  onView?: () => void;
   start: Dayjs;
 };
 
 const DATE_FORMAT = 'MMM D, YYYY';
 
 const ExperienceCard = (props: ExperienceCardProps) => {
-  const { company, description, start, job, link, end } = props;
+  const {
+    company,
+    description,
+    end,
+    job,
+    link,
+    onView = () => {},
+    start,
+  } = props;
 
   return (
     <Box
@@ -48,6 +57,8 @@ const ExperienceCard = (props: ExperienceCardProps) => {
               isRound
               size="lg"
               variant="link"
+              target="_blank"
+              onClick={onView}
               aria-label={`Go to ${job} site`}
               icon={<Icon strokeWidth="4px" as={IoOpenOutline} />}
               _active={{ color: 'text.primary' }}
