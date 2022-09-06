@@ -48,7 +48,7 @@ const Intro = () => {
                 rel="noreferrer"
                 href="https://offsetpartners.com/"
               >
-                Offset Partners.
+                Offset.
               </Heading>
             </Heading>
             <Link passHref href="/Resume.pdf">

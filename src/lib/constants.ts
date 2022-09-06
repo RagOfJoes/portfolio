@@ -32,11 +32,11 @@ export const CONTACTS = [
 ];
 
 export const DESCRIPTION =
-  "I'm a software engineer that specializes in building fun and useful applications. I'm currently focusing on building and maintaining products at Offset Partners.";
+  "I'm a software engineer that specializes in building fun and useful applications. I'm currently focusing on building and maintaining products at Offset.";
 
 export const EXPERIENCES = [
   {
-    company: 'Offset Partners',
+    company: 'Offset',
     description: [
       'Led development team in creating a low code solution allowing our clients to easily integrate our Cart and CMS service into their existing site',
       'Refactored legacy PHP MVC framework to improve integration with React which decreased the number of duplicate and brittle code by up to 60%',
@@ -49,7 +49,7 @@ export const EXPERIENCES = [
     start: dayjs('12/08/2020', 'MM/DD/YYYY'),
   },
   {
-    company: 'Offset Partners',
+    company: 'Offset',
     description: [
       'Managed e-commerce platform by squashing bugs and addressing client requests',
       'Prototyped several internal tools such as a centralized Identity Provider, GraphQL wrapper for our Cart service, and a real-time client issue tracker',
