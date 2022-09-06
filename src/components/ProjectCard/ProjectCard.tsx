@@ -15,13 +15,14 @@ import Link from 'next/link';
 export type ProjectCardProps = {
   image: string;
   name: string;
+  onView?: () => void;
   summary: string;
   tags: string[];
   url?: string;
 };
 
 const ProjectCard = (props: ProjectCardProps) => {
-  const { image, name, summary, tags, url } = props;
+  const { image, name, onView = () => {}, summary, tags, url } = props;
 
   return (
     <Box
@@ -78,7 +79,7 @@ const ProjectCard = (props: ProjectCardProps) => {
       {url && (
         <HStack justify="end">
           <Link passHref href={url}>
-            <Button as="a" mt="6">
+            <Button as="a" mt="6" target="_blank" onClick={onView}>
               View Project
             </Button>
           </Link>

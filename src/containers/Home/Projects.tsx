@@ -2,6 +2,7 @@ import { Grid, GridItem } from '@chakra-ui/react';
 
 import ProjectCard from '@/components/ProjectCard';
 import Section from '@/components/Section';
+import Analytics from '@/lib/analytics';
 import { PROJECTS } from '@/lib/constants';
 
 const Projects = () => {
@@ -19,6 +20,7 @@ const Projects = () => {
                 summary={summary}
                 tags={tags}
                 url={url}
+                onView={() => Analytics.viewProject(name)}
               />
             </GridItem>
           );
