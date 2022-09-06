@@ -27,7 +27,7 @@ const cookieManager = (): ColorModeProviderProps['colorModeManager'] => {
 
 const App = ({ Component, pageProps }: AppProps) => {
   useEffect(() => {
-    Analytics.init(process.env.NEXT_PUBLIC_SPLITBEE_TOKEN);
+    Analytics.init(process.env.NEXT_PUBLIC_SPLITBEE_TOKEN ?? '');
   }, []);
 
   return (
