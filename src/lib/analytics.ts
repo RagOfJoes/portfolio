@@ -1,14 +1,14 @@
 import splitbee from '@splitbee/web';
 
 class Analytics {
-  public static init(splitbeeToken?: string) {
-    if (process.env.NODE_ENV === 'development' && !splitbeeToken) {
-      throw new Error('Must provide splitbee token in development');
+  public static init(splitbeeToken: string) {
+    if (splitbeeToken.length === 0) {
+      throw new Error('Must provide splitbee token!');
     }
 
     splitbee.init({
       disableCookie: true,
-      token: process.env.NODE_ENV === 'development' ? splitbeeToken : undefined,
+      token: splitbeeToken,
     });
   }
 
