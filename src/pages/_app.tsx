@@ -3,7 +3,7 @@ import '@fontsource/raleway/variable.css';
 
 import React from 'react';
 
-import { ChakraProvider, StorageManager } from '@chakra-ui/react';
+import { ChakraProvider, ColorModeProviderProps } from '@chakra-ui/react';
 import dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime';
 import { DefaultSeo } from 'next-seo';
@@ -15,7 +15,7 @@ import theme from '@/lib/theme';
 // Setup DayJS plugins
 dayjs.extend(relativeTime);
 
-const cookieManager = (): StorageManager => {
+const cookieManager = (): ColorModeProviderProps['colorModeManager'] => {
   return {
     ssr: true,
     type: 'cookie',
