@@ -4,6 +4,7 @@ import { Grid, GridItem } from '@chakra-ui/react';
 
 import ExperienceCard from '@/components/ExperienceCard';
 import Section from '@/components/Section';
+import Analytics from '@/lib/analytics';
 import { EXPERIENCES } from '@/lib/constants';
 
 const Experience = () => {
@@ -25,6 +26,7 @@ const Experience = () => {
                 start={start}
                 company={company}
                 description={description}
+                onView={() => Analytics.viewExperience(company)}
                 link={link ? ({ pathname: link } as Url) : undefined}
               />
             </GridItem>

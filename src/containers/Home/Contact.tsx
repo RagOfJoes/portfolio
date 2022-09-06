@@ -8,6 +8,7 @@ import {
 } from '@chakra-ui/react';
 import Link from 'next/link';
 
+import Analytics from '@/lib/analytics';
 import { CONTACTS } from '@/lib/constants';
 
 const Contact = () => {
@@ -22,8 +23,10 @@ const Contact = () => {
               <Link passHref key={link} href={link}>
                 <IconButton
                   as="a"
+                  target="_blank"
                   aria-label={`View my ${label}`}
                   icon={<Icon as={ContactIcon} />}
+                  onClick={() => Analytics.viewSocial(label)}
                 />
               </Link>
             );

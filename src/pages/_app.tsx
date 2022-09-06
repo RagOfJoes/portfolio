@@ -1,7 +1,7 @@
 import '@fontsource/inter/variable.css';
 import '@fontsource/raleway/variable.css';
 
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import { ChakraProvider, ColorModeProviderProps } from '@chakra-ui/react';
 import dayjs from 'dayjs';
@@ -9,6 +9,7 @@ import relativeTime from 'dayjs/plugin/relativeTime';
 import { DefaultSeo } from 'next-seo';
 import { AppProps } from 'next/app';
 
+import Analytics from '@/lib/analytics';
 import { BASE_URL, DESCRIPTION } from '@/lib/constants';
 import theme from '@/lib/theme';
 
@@ -25,6 +26,10 @@ const cookieManager = (): ColorModeProviderProps['colorModeManager'] => {
 };
 
 const App = ({ Component, pageProps }: AppProps) => {
+  useEffect(() => {
+    Analytics.init(process.env.NEXT_PUBLIC_SPLITBEE_TOKEN);
+  }, []);
+
   return (
     <>
       <DefaultSeo

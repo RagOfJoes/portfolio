@@ -12,6 +12,7 @@ import {
 import Link from 'next/link';
 import { IoChevronDown } from 'react-icons/io5';
 
+import Analytics from '@/lib/analytics';
 import { INTRO_STATS } from '@/lib/constants';
 
 const Intro = () => {
@@ -44,9 +45,11 @@ const Intro = () => {
               <Heading
                 as="a"
                 size="lg"
+                target="_blank"
                 color="primary"
                 rel="noreferrer"
                 href="https://offsetpartners.com/"
+                onClick={() => Analytics.viewExperience('Offset')}
               >
                 Offset.
               </Heading>
@@ -67,6 +70,7 @@ const Intro = () => {
                 borderColor="primary"
                 _hover={{ bg: 'transparent' }}
                 _active={{ bg: 'transparent' }}
+                onClick={() => Analytics.viewResume('Intro')}
               >
                 Resume
               </Button>
