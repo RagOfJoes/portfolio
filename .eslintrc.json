@@ -1,6 +1,5 @@
 {
   "root": true,
-  // Configuration for JavaScript files
   "extends": ["airbnb-base", "plugin:prettier/recommended", "next"],
   "rules": {
     "prettier/prettier": [
@@ -11,7 +10,6 @@
     ]
   },
   "overrides": [
-    // Configuration for TypeScript files
     {
       "files": ["**/*.ts", "**/*.tsx"],
       "plugins": ["@typescript-eslint", "unused-imports"],
@@ -21,7 +19,7 @@
         "plugin:prettier/recommended"
       ],
       "parserOptions": {
-        "project": "**/tsconfig.json"
+        "project": "tsconfig.json"
       },
       "rules": {
         "prettier/prettier": [
