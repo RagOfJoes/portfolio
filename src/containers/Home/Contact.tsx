@@ -22,7 +22,7 @@ const Contact = () => {
               <Link passHref key={link} href={link}>
                 <IconButton
                   as="a"
-                  aria-label={label}
+                  aria-label={`View my ${label}`}
                   icon={<Icon as={ContactIcon} />}
                 />
               </Link>

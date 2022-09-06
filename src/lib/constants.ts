@@ -16,17 +16,17 @@ export const BASE_URL = 'https://www.ragofjoes.dev';
 export const CONTACTS = [
   {
     Icon: IoLogoGithub,
-    label: 'View my GitHub profile',
+    label: 'GitHub',
     link: 'https://github.com/RagOfJoes',
   },
   {
     Icon: IoLogoLinkedin,
-    label: 'View my LinkedIn profile',
+    label: 'LinkedIn',
     link: 'https://www.linkedin.com/in/ragofjoes/',
   },
   {
     Icon: IoDocument,
-    label: 'View my Resume',
+    label: 'Resume',
     link: '/Resume.pdf',
   },
 ];
